@@ -1,574 +1,520 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+    <title>New Zealand</title>
+  </head>
 
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/css/reset.css">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-   <link rel="stylesheet" href="/css/style.css">
-   <link rel="stylesheet" href="/css/media.css">
-   <title>New Zealand</title>
-</head>
-
-<body>
-
-   <header class="header">
+  <body>
+    <header class="header">
       <div class="container">
+        <div class="header__top">
+          <a class="logo header__logo" href="#">
+            <svg width="150" height="98">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
 
-         <div class="header__top">
+          <nav class="menu">
+            <button class="menu__btn">
+              <span></span>
+            </button>
+            <ul class="menu__list">
+              <li class="menu__item" data-text="Travel formats">
+                <a class="menu__link" href="#">Travel formats</a>
+              </li>
 
-            <a class="logo header__logo" href="#">
-               <svg width="150" height="98">
-                  <use xlink:href="images/sprite.svg#logo"></use>
-               </svg>
-            </a>
+              <li class="menu__item" data-text="About US">
+                <a class="menu__link" href="#">About US</a>
+              </li>
 
-            <nav class="menu">
-               <button class="menu__btn">
-                  <span></span>
-               </button>
-               <ul class="menu__list">
+              <li class="menu__item" data-text="Countries">
+                <a class="menu__link" href="#">Countries</a>
+              </li>
 
-                  <li class="menu__item" data-text="Travel formats">
-                     <a class="menu__link" href="#">Travel formats</a>
-                  </li>
-
-                  <li class="menu__item" data-text="About US">
-                     <a class="menu__link" href="#">About US</a>
-                  </li>
-
-                  <li class="menu__item" data-text="Countries">
-                     <a class="menu__link" href="#">Countries</a>
-                  </li>
-
-                  <li class="menu__item" data-text="Reviews">
-                     <a class="menu__link" href="#">Reviews</a>
-                  </li>
-
-               </ul>
-
-            </nav>
-
-            <ul class="social__list header__social">
-
-               <li class="social__item">
-                  <a href="#" class="social__link">
-                     <svg width="24" height="25">
-                        <use xlink:href="images/sprite.svg#telegram"></use>
-                     </svg>
-                  </a>
-               </li>
-
-               <li class="social__item">
-                  <a href="#" class="social__link">
-                     <svg width="24" height="25">
-                        <use xlink:href="images/sprite.svg#whatsapp"></use>
-                     </svg>
-                  </a>
-               </li>
-
-               <li class="social__item">
-                  <a href="#" class="social__link">
-                     <svg width="25" height="25">
-                        <use xlink:href="images/sprite.svg#instagram"></use>
-                     </svg>
-                  </a>
-               </li>
-
+              <li class="menu__item" data-text="Reviews">
+                <a class="menu__link" href="#">Reviews</a>
+              </li>
             </ul>
+          </nav>
 
-         </div>
+          <ul class="social__list header__social">
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="24" height="25">
+                  <use xlink:href="images/sprite.svg#telegram"></use>
+                </svg>
+              </a>
+            </li>
 
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="24" height="25">
+                  <use xlink:href="images/sprite.svg#whatsapp"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social__item">
+              <a href="#" class="social__link">
+                <svg width="25" height="25">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="header__content" style="background-image: url(../images/header-bc.jpg);">
+      <div
+        class="header__content"
+        style="background-image: url(./images/header-bc.jpg)"
+      >
+        <div class="container">
+          <div class="header__content-inner">
+            <h1 class="header__title">New Zealand</h1>
 
-         <div class="container">
+            <button class="booking header__booking">I want to travel</button>
 
-            <div class="header__content-inner">
+            <ul class="header__info">
+              <li class="header__info-item"><span>10-20</span> May 2025</li>
 
-               <h1 class="header__title">
-                  New Zealand
-               </h1>
+              <li class="header__info-item"><span>4200€</span> + flight</li>
 
-               <button class="booking header__booking">I want to travel</button>
-
-               <ul class="header__info">
-
-                  <li class="header__info-item">
-                     <span>10-20</span> May 2025
-                  </li>
-
-                  <li class="header__info-item">
-                     <span>4200€</span> + flight
-
-                  </li>
-
-                  <li class="header__info-item">
-                     <span>20</span> people in the group
-                  </li>
-
-               </ul>
-
-            </div>
-
-         </div>
-
+              <li class="header__info-item">
+                <span>20</span> people in the group
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </header>
 
-   </header>
-
-   <main class="main">
-
+    <main class="main">
       <section class="tour-info">
-         <div class="container">
-            <div class="tour-info__inner">
-
-               <div class="tour-info__images-box">
-                  <img class="tour-info__img" src="images/gallery/1.jpg" alt="Tongariro National Park">
-                  <p class="tour-info__img-descr">Tongariro National Park</p>
-               </div>
-
-               <div class="tour-info__images-box imbox-two">
-                  <img class="tour-info__img" src="images/gallery/2.jpg" alt="Fiordland National Park">
-                  <p class="tour-info__img-descr">Fiordland National Park</p>
-               </div>
-
-               <div class="tour-info__content">
-                  <h2 class="tour-info__title title"><span>New Zealand</span></h2>
-                  <p class="tour-info__text">A country where the dreams of adventure seekers and nature lovers come
-                     true. Mountain ranges, endless beaches, unique ecosystems and the beauty of wild landscapes -
-                     all
-                     this creates an atmosphere in which every moment is full of delight. For true travelers, a world
-                     of
-                     active recreation, untouched nature and a sense of absolute freedom opens up here.</p>
-               </div>
-
-               <div class="tour-info__images-box imbox-two">
-                  <img class="tour-info__img" src="images/gallery/3.jpg" alt="Hobbiton Village">
-                  <p class="tour-info__img-descr">Hobbiton Village</p>
-               </div>
-
-               <div class="tour-info__images-box">
-                  <img class="tour-info__img" src="images/gallery/4.jpg" alt="Wellington">
-                  <p class="tour-info__img-descr">Wellington</p>
-               </div>
-
-               <div class="tour-info__addcontent">
-                  <h2 class="tour-info__addcontent-title">
-                     <span>New Zealand with us</span>
-                  </h2>
-                  <p class="tour-info__addcontent-text">it is a mix of impressions of nature, animal world and
-                     hedonism
-                  </p>
-                  <p class="tour-info__addcontent-text">Expand the boundaries of your worldview and thinking.</p>
-                  <button class="booking tour-info__booking">I want to travel</button>
-               </div>
-
-               <div class="tour-info__images-box">
-                  <img class="tour-info__img" src="images/gallery/5.jpg" alt="Mount Cookn">
-                  <p class="tour-info__img-descr">Mount Cookn</p>
-               </div>
-
+        <div class="container">
+          <div class="tour-info__inner">
+            <div class="tour-info__images-box">
+              <img
+                class="tour-info__img"
+                src="/images/gallery/1.jpg"
+                alt="Tongariro National Park"
+              />
+              <p class="tour-info__img-descr">Tongariro National Park</p>
             </div>
 
-         </div>
+            <div class="tour-info__images-box imbox-two">
+              <img
+                class="tour-info__img"
+                src="images/gallery/2.jpg"
+                alt="Fiordland National Park"
+              />
+              <p class="tour-info__img-descr">Fiordland National Park</p>
+            </div>
+
+            <div class="tour-info__content">
+              <h2 class="tour-info__title title"><span>New Zealand</span></h2>
+              <p class="tour-info__text">
+                A country where the dreams of adventure seekers and nature
+                lovers come true. Mountain ranges, endless beaches, unique
+                ecosystems and the beauty of wild landscapes - all this creates
+                an atmosphere in which every moment is full of delight. For true
+                travelers, a world of active recreation, untouched nature and a
+                sense of absolute freedom opens up here.
+              </p>
+            </div>
+
+            <div class="tour-info__images-box imbox-two">
+              <img
+                class="tour-info__img"
+                src="images/gallery/3.jpg"
+                alt="Hobbiton Village"
+              />
+              <p class="tour-info__img-descr">Hobbiton Village</p>
+            </div>
+
+            <div class="tour-info__images-box">
+              <img
+                class="tour-info__img"
+                src="images/gallery/4.jpg"
+                alt="Wellington"
+              />
+              <p class="tour-info__img-descr">Wellington</p>
+            </div>
+
+            <div class="tour-info__addcontent">
+              <h2 class="tour-info__addcontent-title">
+                <span>New Zealand with us</span>
+              </h2>
+              <p class="tour-info__addcontent-text">
+                it is a mix of impressions of nature, animal world and hedonism
+              </p>
+              <p class="tour-info__addcontent-text">
+                Expand the boundaries of your worldview and thinking.
+              </p>
+              <button class="booking tour-info__booking">
+                I want to travel
+              </button>
+            </div>
+
+            <div class="tour-info__images-box">
+              <img
+                class="tour-info__img"
+                src="images/gallery/5.jpg"
+                alt="Mount Cookn"
+              />
+              <p class="tour-info__img-descr">Mount Cookn</p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="tour-program">
-         <div class="container">
-            <div class="tour__program-inner">
+        <div class="container">
+          <div class="tour__program-inner">
+            <h2 class="tour-program__title title">
+              <span>Tour program</span>
+            </h2>
 
-               <h2 class="tour-program__title title">
-                  <span>Tour program</span>
-               </h2>
+            <ul class="tour-program__list">
+              <li class="tour-program__item">
+                <div class="tour-program__content">
+                  <div class="tour-program__content-box">
+                    <svg width="198" height="170">
+                      <use xlink:href="images/sprite.svg#decore-circle"></use>
+                    </svg>
+                  </div>
 
-               <ul class="tour-program__list">
+                  <p class="tour-program__text">
+                    Arrive in Auckland. Spend the day in the country's largest
+                    city: visit the Auckland Tower for panoramic views of the
+                    city, stroll along the Viaduct Promenade, and in the
+                    evening, sample local cuisine and wines at the restaurants
+                    of Wynyard Road.
+                  </p>
+                </div>
 
-                  <li class="tour-program__item">
+                <img
+                  class="tour-program__img"
+                  src="images/gallery/6.jpg"
+                  alt=""
+                />
+              </li>
 
-                     <div class="tour-program__content">
+              <li class="tour-program__item">
+                <div class="tour-program__content">
+                  <div class="tour-program__content-box">
+                    <svg width="198" height="170">
+                      <use xlink:href="images/sprite.svg#decore-circle"></use>
+                    </svg>
+                  </div>
 
-                        <div class="tour-program__content-box">
+                  <p class="tour-program__text">
+                    Head to Rotorua (approximately 3 hours drive), known for its
+                    geothermal springs and Maori culture. Visit Wai-O-Tapu
+                    Geothermal Park with geysers and colorful lakes, and Te Puia
+                    Maori Park for a glimpse of Haki traditions and dances.
+                  </p>
+                </div>
 
-                           <svg width="198" height="170">
-                              <use xlink:href="images/sprite.svg#decore-circle"></use>
-                           </svg>
+                <img
+                  class="tour-program__img"
+                  src="images/gallery/7.jpg"
+                  alt=""
+                />
+              </li>
 
-                        </div>
+              <li class="tour-program__item">
+                <div class="tour-program__content">
+                  <div class="tour-program__content-box">
+                    <svg width="198" height="170">
+                      <use xlink:href="images/sprite.svg#decore-circle"></use>
+                    </svg>
+                  </div>
 
-                        <p class="tour-program__text">Arrive in Auckland. Spend the day in the country's largest city:
-                           visit the Auckland Tower for panoramic views of the city, stroll along the Viaduct Promenade,
-                           and in the evening, sample local cuisine and wines at the restaurants of Wynyard Road.</p>
+                  <p class="tour-program__text">
+                    Early departure to Tongariro National Park - New Zealand's
+                    first national park, known for its active volcanoes. A walk
+                    along the Tongariro Alpine Crossing route will allow you to
+                    see the volcanoes Ngauruhoe and Ruapehu, picturesque emerald
+                    lakes and unforgettable views.
+                  </p>
+                </div>
 
-                     </div>
+                <img
+                  class="tour-program__img"
+                  src="images/gallery/8.jpg"
+                  alt=""
+                />
+              </li>
 
-                     <img class="tour-program__img" src="images/gallery/6.jpg" alt="">
+              <li class="tour-program__item">
+                <div class="tour-program__content">
+                  <div class="tour-program__content-box">
+                    <svg width="198" height="170">
+                      <use xlink:href="images/sprite.svg#decore-circle"></use>
+                    </svg>
+                  </div>
 
-                  </li>
+                  <p class="tour-program__text">
+                    Morning flight to Queenstown, the capital of extreme sports.
+                    Spend the day with your choice of bungee jumping, rafting,
+                    speed boating or a more leisurely gondola ride to Bob's Peak
+                    for stunning views of the city and Lake Wakatipu.
+                  </p>
+                </div>
 
-                  <li class="tour-program__item">
-
-                     <div class="tour-program__content">
-
-                        <div class="tour-program__content-box">
-
-                           <svg width="198" height="170">
-                              <use xlink:href="images/sprite.svg#decore-circle"></use>
-                           </svg>
-
-                        </div>
-
-                        <p class="tour-program__text">Head to Rotorua (approximately 3 hours drive), known for its
-                           geothermal springs and Maori culture. Visit Wai-O-Tapu Geothermal Park with geysers and
-                           colorful
-                           lakes, and Te Puia Maori Park for a glimpse of Haki traditions and dances.
-                        </p>
-
-                     </div>
-
-                     <img class="tour-program__img" src="images/gallery/7.jpg" alt="">
-
-                  </li>
-
-                  <li class="tour-program__item">
-
-                     <div class="tour-program__content">
-
-                        <div class="tour-program__content-box">
-
-                           <svg width="198" height="170">
-                              <use xlink:href="images/sprite.svg#decore-circle"></use>
-                           </svg>
-
-                        </div>
-
-                        <p class="tour-program__text">Early departure to Tongariro National Park - New Zealand's first
-                           national park, known for its active volcanoes. A walk along the Tongariro Alpine Crossing
-                           route
-                           will allow you to see the volcanoes Ngauruhoe and Ruapehu, picturesque emerald lakes and
-                           unforgettable views.
-                        </p>
-
-                     </div>
-
-                     <img class="tour-program__img" src="images/gallery/8.jpg" alt="">
-
-                  </li>
-
-                  <li class="tour-program__item">
-
-                     <div class="tour-program__content">
-
-                        <div class="tour-program__content-box">
-
-                           <svg width="198" height="170">
-                              <use xlink:href="images/sprite.svg#decore-circle"></use>
-                           </svg>
-
-                        </div>
-
-                        <p class="tour-program__text">Morning flight to Queenstown, the capital of extreme sports. Spend
-                           the day with your choice of bungee jumping, rafting, speed boating or a more leisurely
-                           gondola
-                           ride to Bob's Peak for stunning views of the city and Lake Wakatipu.
-                        </p>
-
-                     </div>
-
-                     <img class="tour-program__img" src="images/gallery/9.jpg" alt="">
-
-                  </li>
-               </ul>
-            </div>
-         </div>
+                <img
+                  class="tour-program__img"
+                  src="images/gallery/9.jpg"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="slider">
-         <div class="container">
+        <div class="container">
+          <h2 class="title slider__title">
+            <span>top impressions you will get</span>
+          </h2>
 
-            <h2 class="title slider__title">
-               <span>top impressions you will get</span>
-            </h2>
-
-            <div class="swiper">
-
-               <div class="swiper-wrapper">
-
-                  <div class="swiper-slide"><img class="slide__img" src="images/slide/1.jpg" alt=""></div>
-                  <div class="swiper-slide"><img class="slide__img" src="images/slide/2.jpg" alt=""></div>
-                  <div class="swiper-slide"><img class="slide__img" src="images/slide/3.jpg" alt=""></div>
-
-               </div>
-
-               <div class="swiper-pagination"></div>
-
-               <div class="slide__buttons button-prev">
-                  <svg width="72" height="28">
-                     <use xlink:href="images/sprite.svg#errow-left"></use>
-                  </svg>
-               </div>
-
-
-               <div class="slide__buttons button-next">
-                  <svg width="72" height="28">
-                     <use xlink:href="images/sprite.svg#errow-right"></use>
-                  </svg>
-               </div>
-
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slide__img" src="images/slide/1.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slide__img" src="images/slide/2.jpg" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img class="slide__img" src="images/slide/3.jpg" alt="" />
+              </div>
             </div>
 
-         </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="slide__buttons button-prev">
+              <svg width="72" height="28">
+                <use xlink:href="images/sprite.svg#errow-left"></use>
+              </svg>
+            </div>
+
+            <div class="slide__buttons button-next">
+              <svg width="72" height="28">
+                <use xlink:href="images/sprite.svg#errow-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="tours">
-         <div class="container">
+        <div class="container">
+          <h2 class="title tours__title">
+            <span>our other tours</span>
+          </h2>
 
-            <h2 class="title tours__title">
-               <span>our other tours</span>
-            </h2>
+          <ul class="tours__list">
+            <li class="tours__item">
+              <img class="tours__item-img" src="images/tours/1.jpg" alt="" />
 
-            <ul class="tours__list">
+              <h3 class="tours__item-title">Kenya</h3>
 
-               <li class="tours__item">
+              <ul class="tours__info-list">
+                <li class="tours__info-item">
+                  <div class="tours__info-flag">
+                    <img src="images/flags/flag-kenya.svg" alt="" />
+                  </div>
+                </li>
 
-                  <img class="tours__item-img" src="images/tours/1.jpg" alt="">
+                <li class="tours__info-item">
+                  <p class="tour__info-date">5-15 sept 2025</p>
+                </li>
 
-                  <h3 class="tours__item-title">
-                     Kenya
-                  </h3>
+                <li class="tours__info-item">
+                  <p class="tours__info-price">3500€ + avia</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tours__item">
+              <img class="tours__item-img" src="images/tours/2.jpg" alt="" />
 
-                  <ul class="tours__info-list">
+              <h3 class="tours__item-title">Ireland</h3>
 
-                     <li class="tours__info-item">
-                        <div class="tours__info-flag">
-                           <img src="images/flags/flag-kenya.svg" alt="">
-                        </div>
-                     </li>
+              <ul class="tours__info-list">
+                <li class="tours__info-item">
+                  <div class="tours__info-flag">
+                    <img src="images/flags/flag-ireland.svg" alt="" />
+                  </div>
+                </li>
 
-                     <li class="tours__info-item">
-                        <p class="tour__info-date">5-15 sept 2025</p>
-                     </li>
+                <li class="tours__info-item">
+                  <p class="tour__info-date">6-18 aug 2025</p>
+                </li>
 
-                     <li class="tours__info-item">
-                        <p class="tours__info-price">3500€ + avia
-                        </p>
-                     </li>
+                <li class="tours__info-item">
+                  <p class="tours__info-price">3000€ + avia</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tours__item tours__item--active">
+              <img class="tours__item-img" src="images/tours/3.jpg" alt="" />
 
-                  </ul>
+              <h3 class="tours__item-title">new zealand</h3>
 
-               </li>
-               <li class="tours__item">
+              <ul class="tours__info-list">
+                <li class="tours__info-item">
+                  <div class="tours__info-flag">
+                    <img src="images/flags/flag-newzealand.svg" alt="" />
+                  </div>
+                </li>
 
-                  <img class="tours__item-img" src="images/tours/2.jpg" alt="">
+                <li class="tours__info-item">
+                  <p class="tour__info-date">24-30 may 2025</p>
+                </li>
 
-                  <h3 class="tours__item-title">
-                     Ireland
-                  </h3>
+                <li class="tours__info-item">
+                  <p class="tours__info-price">4200€ + avia</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tours__item">
+              <img class="tours__item-img" src="images/tours/4.jpg" alt="" />
 
-                  <ul class="tours__info-list">
+              <h3 class="tours__item-title">Peru</h3>
 
-                     <li class="tours__info-item">
-                        <div class="tours__info-flag">
-                           <img src="images/flags/flag-ireland.svg" alt="">
-                        </div>
-                     </li>
+              <ul class="tours__info-list">
+                <li class="tours__info-item">
+                  <div class="tours__info-flag">
+                    <img src="images/flags/flag-peru.svg" alt="" />
+                  </div>
+                </li>
 
-                     <li class="tours__info-item">
-                        <p class="tour__info-date">6-18 aug 2025</p>
-                     </li>
+                <li class="tours__info-item">
+                  <p class="tour__info-date">05-10 jan 2025</p>
+                </li>
 
-                     <li class="tours__info-item">
-                        <p class="tours__info-price">3000€ + avia
-                        </p>
-                     </li>
+                <li class="tours__info-item">
+                  <p class="tours__info-price">4000€ + avia</p>
+                </li>
+              </ul>
+            </li>
+            <li class="tours__item">
+              <img class="tours__item-img" src="images/tours/5.jpg" alt="" />
 
+              <h3 class="tours__item-title">Bali</h3>
 
-                  </ul>
+              <ul class="tours__info-list">
+                <li class="tours__info-item">
+                  <div class="tours__info-flag">
+                    <img src="images/flags/flag-bali.svg" alt="" />
+                  </div>
+                </li>
 
-               </li>
-               <li class="tours__item tours__item--active">
+                <li class="tours__info-item">
+                  <p class="tour__info-date">10-20 june 2025</p>
+                </li>
 
-                  <img class="tours__item-img" src="images/tours/3.jpg" alt="">
-
-                  <h3 class="tours__item-title">
-                     new zealand
-                  </h3>
-
-                  <ul class="tours__info-list">
-
-                     <li class="tours__info-item">
-                        <div class="tours__info-flag">
-                           <img src="images/flags/flag-newzealand.svg" alt="">
-                        </div>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tour__info-date">24-30 may 2025</p>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tours__info-price">4200€ + avia
-                        </p>
-                     </li>
-
-                  </ul>
-
-               </li>
-               <li class="tours__item">
-
-                  <img class="tours__item-img" src="images/tours/4.jpg" alt="">
-
-                  <h3 class="tours__item-title">
-                     Peru
-                  </h3>
-
-                  <ul class="tours__info-list">
-
-                     <li class="tours__info-item">
-                        <div class="tours__info-flag">
-                           <img src="images/flags/flag-peru.svg" alt="">
-                        </div>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tour__info-date">05-10 jan 2025</p>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tours__info-price">4000€ + avia
-                        </p>
-                     </li>
-
-                  </ul>
-
-               </li>
-               <li class="tours__item">
-
-                  <img class="tours__item-img" src="images/tours/5.jpg" alt="">
-
-                  <h3 class="tours__item-title">
-                     Bali
-                  </h3>
-
-                  <ul class="tours__info-list">
-
-                     <li class="tours__info-item">
-                        <div class="tours__info-flag">
-                           <img src="images/flags/flag-bali.svg" alt="">
-                        </div>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tour__info-date">10-20 june 2025</p>
-                     </li>
-
-                     <li class="tours__info-item">
-                        <p class="tours__info-price">5500€ + avia
-                        </p>
-                     </li>
-
-                  </ul>
-
-               </li>
-
-            </ul>
-
-         </div>
+                <li class="tours__info-item">
+                  <p class="tours__info-price">5500€ + avia</p>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </section>
+    </main>
 
-      
-   </main>
-
-   <footer class="footer">
-
+    <footer class="footer">
       <div class="container">
-         <div class="footer__inner">
+        <div class="footer__inner">
+          <a class="logo footer__logo" href="#">
+            <svg width="150" height="98">
+              <use xlink:href="images/sprite.svg#logo"></use>
+            </svg>
+          </a>
 
-            <a class="logo footer__logo" href="#">
-               <svg width="150" height="98">
-                  <use xlink:href="images/sprite.svg#logo"></use>
-               </svg>
-            </a>
-
-            <nav class="footer__nav">
-               <ul class="footer__nav-list">
-                  <li class="footer__nav-item">
-                     <a class="footer__nav-link" href="#">Home</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a class="footer__nav-link" href="#">Travel formats</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a class="footer__nav-link" href="#">Countries</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a class="footer__nav-link" href="#">About us</a>
-                  </li>
-                  <li class="footer__nav-item">
-                     <a class="footer__nav-link" href="#">Reviews</a>
-                  </li>
-               </ul>
-            </nav>
-
-            <div class="footer__contacts">
-               <p class="footer__cotacts-title">Contacts:</p>
-               <address class="footer__address">
-                  <p class="footer__address-name">Kyiv, Kalynova St. 30</p>
-                  <a class="phone" href="tel:38066652344129">+38066652344129</a>
-               </address>
-
-               <ul class="social__list">
-
-                  <li class="social__item">
-                     <a href="#" class="social__link">
-                        <svg width="24" height="25">
-                           <use xlink:href="images/sprite.svg#telegram"></use>
-                        </svg>
-                     </a>
-                  </li>
-
-                  <li class="social__item">
-                     <a href="#" class="social__link">
-                        <svg width="24" height="25">
-                           <use xlink:href="images/sprite.svg#whatsapp"></use>
-                        </svg>
-                     </a>
-                  </li>
-
-                  <li class="social__item">
-                     <a href="#" class="social__link">
-                        <svg width="25" height="25">
-                           <use xlink:href="images/sprite.svg#instagram"></use>
-                        </svg>
-                     </a>
-                  </li>
-
-               </ul>
-            </div>
-
-            <ul class="footer__list">
-               <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Tour operator license</a>
-               </li>
-               <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Public offer contract</a>
-               </li>
-               <li class="footer__list-item">
-                  <a class="footer__list-link" href="#">Privacy Policy</a>
-               </li>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Home</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Travel formats</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Countries</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">About us</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="#">Reviews</a>
+              </li>
             </ul>
+          </nav>
 
-         </div>
+          <div class="footer__contacts">
+            <p class="footer__cotacts-title">Contacts:</p>
+            <address class="footer__address">
+              <p class="footer__address-name">Kyiv, Kalynova St. 30</p>
+              <a class="phone" href="tel:38066652344129">+38066652344129</a>
+            </address>
+
+            <ul class="social__list">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="24" height="25">
+                    <use xlink:href="images/sprite.svg#telegram"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="24" height="25">
+                    <use xlink:href="images/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <svg width="25" height="25">
+                    <use xlink:href="images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Tour operator license</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Public offer contract</a>
+            </li>
+            <li class="footer__list-item">
+              <a class="footer__list-link" href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </footer>
 
-   </footer>
-
-
-   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   <script src="/js/main.js"></script>
-
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>
